@@ -1,0 +1,39 @@
+@import url('https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&display=swap');
+@layer theme, base, components, utilities;
+@import "tailwindcss/theme.css" layer(theme);
+@import "tailwindcss/utilities.css" layer(utilities);
+@import "tw-animate-css";
+
+/* Keep the existing base styles rather than applying Tailwind's reset. */
+@theme inline {
+  --color-background: #ffffff;
+  --color-foreground: #1d2939;
+  --color-card: #ffffff;
+  --color-card-foreground: #1d2939;
+  --color-primary: #365bd6;
+  --color-primary-foreground: #ffffff;
+  --color-secondary: #f1f4fa;
+  --color-secondary-foreground: #46536c;
+  --color-muted: #f6f8fb;
+  --color-muted-foreground: #667085;
+  --color-accent: #f1f4fa;
+  --color-accent-foreground: #1d2939;
+  --color-destructive: #b13c34;
+  --color-destructive-foreground: #ffffff;
+  --color-border: #e5e9f1;
+  --color-input: #d9dfeb;
+  --color-ring: #5877de;
+  --radius-lg: 0.75rem;
+  --radius-md: 0.5rem;
+  --radius-sm: 0.25rem;
+}
+.auth-main { width: 100%; max-width: 460px; }
+
+
+:root{font-family:'DM Sans',system-ui,sans-serif;color:#1d2939;background:#f6f8fb;font-synthesis:none;text-rendering:optimizeLegibility;-webkit-font-smoothing:antialiased;font-weight:400;line-height:1.6;color-scheme:light}
+*{box-sizing:border-box}body{margin:0}button,input{font:inherit}a{color:#355cd7;text-decoration:none}a:hover{text-decoration:underline}button,a,input{-webkit-tap-highlight-color:transparent}button:focus-visible,a:focus-visible{outline:3px solid #a5b8ff;outline-offset:4px}h1,h2,p{margin:0}h1{font-size:30px;letter-spacing:-1px;line-height:1.25;font-weight:700;margin:10px 0 12px;overflow-wrap:anywhere}h2{font-size:18px;line-height:1.4;letter-spacing:-.3px}.intro{color:#667085;font-size:15px;margin-bottom:28px}.brand{display:inline-flex;align-items:center;gap:10px;color:#202d48;font-size:21px;font-weight:700;letter-spacing:-.5px}.brand:hover{text-decoration:none}.brand-mark{display:grid;place-items:center;background:#365bd6;color:white;width:36px;height:36px;border-radius:11px;font-size:28px;line-height:1;padding-bottom:4px}.auth-shell{min-height:100svh;display:flex;flex-direction:column;align-items:center;justify-content:center;padding:40px 20px;background:radial-gradient(ellipse at 50% 0%,#eaf0ff 0,transparent 60%)}.auth-shell>.brand{margin-bottom:28px}.auth-card{width:100%;max-width:460px;background:white;border:1px solid #e5e9f1;border-radius:20px;padding:36px;box-shadow:0 16px 60px #1b30580a}.eyebrow{font-size:10px;letter-spacing:1.8px;font-weight:700;color:#6a7893}.auth-footer{border-top:1px solid #edf0f5;margin-top:28px;padding-top:22px;text-align:center;font-size:14px;color:#667085}.auth-footer a{font-weight:600}.shell-caption{font-size:12px;color:#8791a3;margin-top:25px}form,fieldset{display:flex;flex-direction:column}fieldset{border:0;padding:0;margin:0;min-width:0}label{font-size:13px;font-weight:600;margin-bottom:7px}input{width:100%;border:1px solid #d9dfeb;border-radius:9px;padding:11px 13px;background:white;color:#1d2939;margin-bottom:18px;min-height:46px;outline:none}input::placeholder{color:#9ba3b2}input:focus{border-color:#5877de;box-shadow:0 0 0 3px #365bd615}input:disabled{background:#f6f8fb}.button{display:inline-flex;align-items:center;justify-content:center;gap:8px;background:#365bd6;color:white;border:1px solid transparent;border-radius:9px;padding:11px 18px;font-weight:600;font-size:14px;min-height:45px;cursor:pointer;text-align:center;transition:background .15s}.button:hover{background:#294ab8;text-decoration:none}.button:disabled{cursor:wait;opacity:.65}.secondary{background:white;border-color:#dce2eb;color:#46536c}.secondary:hover{background:#f1f4fa}.full-width{width:100%}.notice{border:1px solid #dae3f5;background:#f2f6ff;color:#3a5379;padding:12px 14px;border-radius:9px;font-size:13px;margin-bottom:20px;overflow-wrap:anywhere}.error{background:#fff4f3;color:#b13c34;border-color:#f6d8d5}.success{background:#eef9f3;color:#26764d;border-color:#d3ecdd}.field-help{font-size:12px;color:#758196;margin-bottom:16px}.code-input{font-size:25px;letter-spacing:9px;text-align:center;margin-bottom:9px}.qr-panel{display:flex;justify-content:center;margin:8px 0 20px}.qr-panel svg{max-width:100%;height:auto}.secret{display:block;background:#f4f6fa;border:1px solid #e5e9f1;padding:12px;border-radius:8px;overflow-wrap:anywhere;font-size:14px;margin-bottom:10px}.info-panel{padding:18px;background:#f6f8fd;border:1px solid #e7ecf7;border-radius:12px;margin-bottom:22px}.info-panel h2{font-size:15px;margin-bottom:8px}.info-panel p{font-size:14px;color:#68758b}.dashboard{min-height:100svh;display:flex;flex-direction:column}.topbar{height:84px;background:white;border-bottom:1px solid #e5e9f1;padding:0 max(24px,calc((100% - 1100px)/2));display:flex;align-items:center;justify-content:space-between;gap:18px}.nav-actions{display:flex;align-items:center;gap:24px}.nav-label{font-size:13px;color:#8590a3}.dashboard-content{width:100%;max-width:1148px;margin:0 auto;padding:55px 24px;flex:1}.dashboard-content h1{font-size:36px}.dashboard-grid{display:grid;grid-template-columns:1.2fr 1fr;gap:24px;margin-top:34px}.panel{background:white;border:1px solid #e2e7ef;border-radius:16px;padding:30px}.panel-heading{display:flex;gap:14px;align-items:center;padding-bottom:26px;border-bottom:1px solid #edf0f5}.panel p{font-size:14px;color:#758196}.avatar{width:48px;height:48px;display:grid;place-items:center;background:#edf1ff;color:#4261c9;border-radius:14px;font-size:22px;font-weight:600}dl{margin:24px 0 0}dt{font-size:12px;color:#8290a5;margin-top:18px}dd{margin:4px 0 0;font-size:15px;overflow-wrap:anywhere}.security-panel{background:linear-gradient(130deg,#fff,#f0f4ff)}.security-panel h2{font-size:23px;margin:18px 0 12px;max-width:290px}.security-panel p{margin-bottom:25px;max-width:320px}.text-link{display:block;font-size:13px;margin-top:18px}.dashboard-footer{padding:24px;text-align:center;color:#8d98aa;font-size:12px;border-top:1px solid #e5e9f1}
+@media(max-width:650px){.auth-shell{padding:28px 16px}.auth-card{padding:26px 22px;border-radius:16px}h1{font-size:27px}.dashboard-content{padding:32px 20px}.dashboard-content h1{font-size:29px}.dashboard-grid{grid-template-columns:1fr;gap:18px;margin-top:25px}.topbar{padding:0 20px;height:74px}.nav-label{display:none}.panel{padding:24px}.nav-actions{gap:10px}}
+
+/* Preserve the original card spacing with shadcn primitives. */
+.auth-card, .workspace-card { display: block; }
+.notice [data-slot="alert-description"] { color: inherit; }
